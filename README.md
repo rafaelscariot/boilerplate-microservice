@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Boilerplate to implement a microservice using Kafka, Redis and MongoDB.
 
 ## Installation
 
