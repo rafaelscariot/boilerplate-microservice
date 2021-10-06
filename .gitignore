@@ -1,4 +1,6 @@
 .env
+db/
+docker/
 
 # compiled output
 /dist

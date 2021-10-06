@@ -1,8 +1,8 @@
 import { MicroserviceOptions } from '@nestjs/microservices';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
-import { microserviceConfig } from './microservice.config';
-import { validateEnvVars } from './core/config'
+import { microserviceConfig } from './config/microservice.config';
+import { validateEnvVars } from '@config/config';
 
 async function bootstrap() {
   validateEnvVars();
