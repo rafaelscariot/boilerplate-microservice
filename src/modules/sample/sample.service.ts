@@ -1,6 +1,6 @@
-import { Injectable, BadRequestException, Inject } from '@nestjs/common';
-import { CreateSampleDto } from './dto/create-sample.dto';
-import { ISample } from './interface/sample.interface';
+import { Injectable, BadRequestException } from '@nestjs/common';
+import { CreateSampleDto } from '@common/dtos/create-sample.dto';
+import { ISample } from '@common/interfaces/sample.interface';
 import { SampleRepository } from './sample.repository';
 
 @Injectable()
@@ -13,11 +13,7 @@ export class SampleService {
 
       const foundSample = await this.sampleRepository.findOne({ email });
 
-      if (foundSample) {
-        throw new BadRequestException(
-          `Sample with e-mail ${email} already exists`,
-        );
-      }
+      if (foundSample) return;
 
       return this.sampleRepository.save(createSampleDto);
     } catch (error) {

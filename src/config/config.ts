@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const REQUIRED_ENV_VARS = [
-  'DB_URL',
+  'DB_URI',
   'TEST_TOPIC',
   'KAFKA_ID',
   'KAFKA_HOST',

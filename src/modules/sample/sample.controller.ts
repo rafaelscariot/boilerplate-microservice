@@ -1,7 +1,7 @@
 import { Controller, Logger } from '@nestjs/common';
 import { SampleService } from './sample.service';
 import { MessagePattern, Payload } from '@nestjs/microservices';
-import { ISample } from './interface/sample.interface';
+import { ISample } from '@common/interfaces/sample.interface';
 
 @Controller('sample')
 export class SampleController {

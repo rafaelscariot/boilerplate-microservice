@@ -32,6 +32,12 @@ Boilerplate to implement a microservice using Kafka, Redis and MongoDB.
 $ yarn
 ```
 
+## Running the unit tests
+```bash
+# development
+$ yarn test --coverage
+```
+
 ## Running the app
 ```bash
 # containers

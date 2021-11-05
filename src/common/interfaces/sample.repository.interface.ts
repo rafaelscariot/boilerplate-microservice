@@ -1,4 +1,4 @@
-import { CreateSampleDto } from '../dto';
+import { CreateSampleDto } from '@common/dtos';
 import { ISample } from '.';
 import { FilterQuery } from 'mongoose';
 

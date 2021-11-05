@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Model, FilterQuery } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-import { CreateSampleDto } from './dto/create-sample.dto';
-import { ISample, ISampleRepository } from './interface';
+import { CreateSampleDto } from '@common/dtos/create-sample.dto';
+import { ISample, ISampleRepository } from '@common/interfaces';
 
 @Injectable()
 export class SampleRepository implements ISampleRepository {

@@ -1,6 +1,7 @@
 .env
 db/
 docker/
+coverage/
 
 # compiled output
 /dist
