@@ -34,7 +34,6 @@ $ yarn
 
 ## Running the unit tests
 ```bash
-# development
 $ yarn test --coverage
 ```
 
